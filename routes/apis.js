@@ -36,9 +36,9 @@ router.get('/countries/:code/cities', function(req, res, next) {
   }
 });
 
-router.get('/states/:code/cities', function(req, res, next) {
+router.get('/countries/:countryCode/states/:stateCode/cities', function(req, res, next) {
   try {
-    res.json(City.getCitiesOfState(req.params.code))
+    res.json(City.getCitiesOfState(req.params.countryCode, req.params.stateCode))
   } catch (error) {
     res.json([])
   }

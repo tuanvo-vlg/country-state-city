@@ -3,37 +3,37 @@
     "id": "123456",
     "name": "John Doe 1",
     "isWinners": true,
-    "hasAppeared": true
+    "hasAppeared": false
   },
   {
     "id": "124456",
     "name": "John Doe 2",
     "isWinners": true,
-    "hasAppeared": true
+    "hasAppeared": false
   },
   {
     "id": "121456",
     "name": "John Doe 3",
     "isWinners": true,
-    "hasAppeared": true
+    "hasAppeared": false
   },
   {
     "id": "123156",
     "name": "John Doe 4",
     "isWinners": true,
-    "hasAppeared": true
+    "hasAppeared": false
   },
   {
     "id": "123450",
     "name": "John Doe 5",
     "isWinners": true,
-    "hasAppeared": true
+    "hasAppeared": false
   },
   {
     "id": "324456",
     "name": "John Doe 6",
     "isWinners": true,
-    "hasAppeared": true
+    "hasAppeared": false
   },
   {
     "id": "191923",

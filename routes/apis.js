@@ -48,8 +48,18 @@ router.get('/countries/:countryCode/states/:stateCode/cities', function (req, re
 
 router.get('/luckydraw/participants', function (req, res, next) {
   try {
-    const participants = require('./participants.json');
-    res.json(participants)
+    const filePath = __dirname + '/participants.json';
+    console.log(__dirname)
+    // Đọc nội dung của file JSON
+    fs.readFile(filePath, 'utf8', (err, data) => {
+      if (err) {
+        console.error('Error reading file:', err);
+        return;
+      }
+      const jsonData = JSON.parse(data);
+      return res.json(jsonData)
+
+    });
   } catch (error) {
     res.json([])
   }
@@ -90,7 +100,6 @@ router.put('/luckydraw/participants', function (req, res, next) {
       });
     });
   } catch (error) {
-    console.log(error)
     res.json([])
   }
 });
